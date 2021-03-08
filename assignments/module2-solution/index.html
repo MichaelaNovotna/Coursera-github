@@ -1,0 +1,106 @@
+
+<!-- 1 page - single responsive page for desktop, tablet, and mobile 
+
+no CSS framework
+
+css placed in css folder
+
+may use simple responsive framework from lecture 24
+
+desktop: >992
+tablet: >768 and <992 incl.
+mobile: <767, incl.
+
+page heading and 3 sections
+each section contains text
+how the sections are laid out depends on the width of the browser window (hint use media queries lecture 23)
+
+desktop: (equal amount of space on the screen) - hint: percentage, use float property - lecture 24
+tablet: 2 sections in the first row and equal, 3rd section in second row and take up the entire row by itself
+mobile: each section entire row
+
+each section has a totle region at the top right corner of the section - relative and absolute positioning and offsets as discussed in lecture 22
+spacing: use margins and padding and border-box as box-sizing
+
+borders and colors: each section has a background color, title unique color
+black border on both the section and section title region that is 1px thick
+
+optional: set a font-family for the text in your page, so you are not stuck with the default browser font family
+set the font size of the heading and section title to be 75% larger and 25% larger (respectively) than the font size of the dummy text.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipes</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 993px) {
+  .col-lg-4 {
+    float: left;
+    border: 1px solid black;
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 992px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid black;
+    }
+  .col-md-6  {
+  	width: 50%;
+  	}
+  .col-md-12  {
+    width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+<h1>Recipes</h1>
+
+<div class="row">
+  <div class="col-lg-4 col-md-6">
+  	<section>
+  		<h2>Item 1</h2>
+  		<p>text 1</p>
+  	</section>
+  </div>
+  <div class="col-lg-4 col-md-6">
+  	<section>
+  		<h2>Item 2</h2>
+  		<p>text 2</p>
+ 	 </section>
+  </div>
+  <div class="col-lg-4 col-md-12">
+  	<section>
+  		<h2>Item 3</h2>
+  		<p>text 3</p>
+  	</section>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
