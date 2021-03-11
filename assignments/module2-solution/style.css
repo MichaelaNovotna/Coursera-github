@@ -17,7 +17,7 @@ h1 {
 }
 
 p {
-  margin: 30px 10px 10px;
+  padding: 30px 10px 10px;
   background-color: #cce6ff;
 }
 
@@ -52,6 +52,7 @@ background-color: #9900cc;
   text-align: justify;
 }
 
+/* Simple Responsive Framework. */
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
@@ -63,12 +64,14 @@ background-color: #9900cc;
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md12  {
+    float: left;
+  }
+
   .col-md-6  {
     width: 50%;
-    float: left;
   }
   .col-md-12  {
     width: 100%;
-    float: left;
   }
 }
