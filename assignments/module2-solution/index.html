@@ -1,33 +1,7 @@
 
-<!-- 1 page - single responsive page for desktop, tablet, and mobile 
 
-no CSS framework
-
-css placed in css folder
-
-may use simple responsive framework from lecture 24
-
-desktop: >992
-tablet: >768 and <992 incl.
-mobile: <767, incl.
-
-page heading and 3 sections
-each section contains text
-how the sections are laid out depends on the width of the browser window (hint use media queries lecture 23)
-
-desktop: (equal amount of space on the screen) - hint: percentage, use float property - lecture 24
-tablet: 2 sections in the first row and equal, 3rd section in second row and take up the entire row by itself
-mobile: each section entire row
-
+<!--
 each section has a title region at the top right corner of the section - relative and absolute positioning and offsets as discussed in lecture 22
-spacing: use margins and padding and border-box as box-sizing
-
-borders and colors: each section has a background color, title unique color
-black border on both the section and section title region that is 1px thick
-
-optional: set a font-family for the text in your page, so you are not stuck with the default browser font family
-set the font size of the heading and section title to be 75% larger and 25% larger (respectively) than the font size of the dummy text.
-
 -->
 
 <!DOCTYPE html>
@@ -43,23 +17,29 @@ set the font size of the heading and section title to be 75% larger and 25% larg
 </head>
 <body>
 
-<h1>Recipes</h1>
+<h1>Pasta Recipes</h1>
 
-<div class="row">
+<div>
 
   <section class="col-lg-4 col-md-6">
-  	<p class="title" id="title1">Item 1</p>
-  	<p>1Carbonara: Put a large pot of salted water on to boil and heat olive oil in a large sauté pan. Add bacon or pancetta and cook slowly until crispy. Add garlic and cook another minute, then turn off the heat and put the pancetta and garlic into a large bowl. In a small bowl, beat eggs and mix in cheese. Add dry pasta into the boiling water, and cook, uncovered, at a rolling boil. When the pasta is al dente, use tongs to move it to the bowl with the bacon and garlic. Move the pasta from the pot to the bowl quickly, as you want the pasta to be hot. Toss everything to combine, allowing the pasta to cool just enough so that it doesn't make the eggs curdle when you mix them in. Add the beaten eggs with cheese and toss quickly to combine once more. Add salt and serve with the rest of the parmesan and freshly ground black pepper.</p>
+  	<div class="container">
+  		<h2 class="title" id="title1">Carbonara</h2>
+  		<p>Put a large pot of salted water on to boil and heat olive oil in a large sauté pan. Add bacon and cook slowly until crispy. Add garlic, then turn off the heat and put the bacon and garlic into a large bowl. In a small bowl, beat eggs and mix in cheese. Add dry pasta into the boiling water, and cook at a rolling boil. When the pasta is al dente, use tongs to move it to the bowl with the bacon and garlic. Move the pasta from the pot to the bowl quickly. Toss everything to combine, allowing the pasta to cool so that it doesn't make the eggs curdle when you mix them in. Add the beaten eggs with cheese and toss quickly to combine once more. Add salt and serve with the rest of the parmesan and freshly ground black pepper.</p>
+  	</div>
   </section>
 
   <section class="col-lg-4 col-md-6">
-  	<p class="title" id="title2">Item 2</p>
-  	<p>2Carbonara: Put a large pot of salted water on to boil and heat olive oil in a large sauté pan. Add bacon or pancetta and cook slowly until crispy. Add garlic and cook another minute, then turn off the heat and put the pancetta and garlic into a large bowl. In a small bowl, beat eggs and mix in cheese. Add dry pasta into the boiling water, and cook, uncovered, at a rolling boil. When the pasta is al dente, use tongs to move it to the bowl with the bacon and garlic. Move the pasta from the pot to the bowl quickly, as you want the pasta to be hot. Toss everything to combine, allowing the pasta to cool just enough so that it doesn't make the eggs curdle when you mix them in. Add the beaten eggs with cheese and toss quickly to combine once more. Add salt and serve with the rest of the parmesan and freshly ground black pepper.</p>
+  	<div class="container">
+  		<h2 class="title" id="title2">Still Carbonara</h2>
+  		<p>Put a large pot of salted water on to boil and heat olive oil in a large sauté pan. Add bacon and cook slowly until crispy. Add garlic, then turn off the heat and put the bacon and garlic into a large bowl. In a small bowl, beat eggs and mix in cheese. Add dry pasta into the boiling water, and cook at a rolling boil. When the pasta is al dente, use tongs to move it to the bowl with the bacon and garlic. Move the pasta from the pot to the bowl quickly. Toss everything to combine, allowing the pasta to cool so that it doesn't make the eggs curdle when you mix them in. Add the beaten eggs with cheese and toss quickly to combine once more. Add salt and serve with the rest of the parmesan and freshly ground black pepper.</p>
+  	</div>
   </section>
 
   <section class="col-lg-4 col-md-12">
-  	<p class="title" id="title3">Item 3</p>
-  	<p>3Carbonara: Put a large pot of salted water on to boil and heat olive oil in a large sauté pan. Add bacon or pancetta and cook slowly until crispy. Add garlic and cook another minute, then turn off the heat and put the pancetta and garlic into a large bowl. In a small bowl, beat eggs and mix in cheese. Add dry pasta into the boiling water, and cook, uncovered, at a rolling boil. When the pasta is al dente, use tongs to move it to the bowl with the bacon and garlic. Move the pasta from the pot to the bowl quickly, as you want the pasta to be hot. Toss everything to combine, allowing the pasta to cool just enough so that it doesn't make the eggs curdle when you mix them in. Add the beaten eggs with cheese and toss quickly to combine once more. Add salt and serve with the rest of the parmesan and freshly ground black pepper.</p>
+  	<div class="container">
+  		<h2 class="title" id="title3">Also Carbonara</h2>
+  		<p>Put a large pot of salted water on to boil and heat olive oil in a large sauté pan. Add bacon and cook slowly until crispy. Add garlic, then turn off the heat and put the bacon and garlic into a large bowl. In a small bowl, beat eggs and mix in cheese. Add dry pasta into the boiling water, and cook at a rolling boil. When the pasta is al dente, use tongs to move it to the bowl with the bacon and garlic. Move the pasta from the pot to the bowl quickly. Toss everything to combine, allowing the pasta to cool so that it doesn't make the eggs curdle when you mix them in. Add the beaten eggs with cheese and toss quickly to combine once more. Add salt and serve with the rest of the parmesan and freshly ground black pepper.</p>
+  	</div>
   </section>
 
 </div>
